@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "sc2-blog",
+    "sc2": "sc2-blog"
+  }
+}

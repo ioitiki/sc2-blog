@@ -1,5 +1,22 @@
 {
   "name": "sc2-blog",
   "dependencies": {
-  }
+    "bootstrap": "^3.3.7",
+    "bootstrap-select": "^1.12.2",
+    "jquery": "^3.2.1"
+  },
+  "authors": [
+    "Andrew Malkin <andymalkin@hotmail.com>"
+  ],
+  "description": "A place for users to blog about their Starcraft2 exploits.",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }

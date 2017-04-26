@@ -3,7 +3,22 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
-    // Add options here
+    outputPaths: {
+      app: {
+        html: 'index.html',
+        css: {
+          'app': '/assets/sc2-blog.css',
+          'bootstrap': 'bower_components/bootstrap/dist/css/bootstrap.css',
+          'bootstrap-select': 'bower_components/bootstrap-select/dist/css/bootstrap-select.css',
+          'jquery': 'bower_components/jquery/dist/jquery.js'
+        },
+        js: '/assets/sc2-blog.js'
+      },
+      vendor: {
+        css: '/assets/vendor.css',
+        js: '/assets/vendor.js'
+      }
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated

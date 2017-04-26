@@ -3,22 +3,35 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sc2Blog</title>
+    <title>Sc2 Blog</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {{content-for "head"}}
 
-    <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
-    <link rel="stylesheet" href="{{rootURL}}assets/sc2-blog.css">
-
     {{content-for "head-footer"}}
   </head>
   <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="/"><img src="/images/icon.png" id="home-icon" /></a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="/stylists">Current Employees</a></li>
+          <li><a href="/clients">Current Clients</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+        <form action="/search" class="navbar-form navbar-right" method="post">
+          <div class="form-group">
+            <input required name="searchInput" type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="search-btn btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+        </form>
+      </div>
+    </nav>
     {{content-for "body"}}
 
-    <script src="{{rootURL}}assets/vendor.js"></script>
-    <script src="{{rootURL}}assets/sc2-blog.js"></script>
 
     {{content-for "body-footer"}}
   </body>
